@@ -34,7 +34,6 @@ const reveal = () => {
 }
 window.addEventListener('scroll', reveal);
 const addSignature = (person) => {
-  // Write your code to manipulate the DOM here
   let signaturesContainer = document.querySelector(".signatures");
   let newSignature = document.createElement("p");
   newSignature.textContent = "🖊️ " + person.firstName + " from " + person.homeTown + " supports this.";
@@ -111,17 +110,6 @@ const toggleModal = (person) => {
 let signNowButton = document.getElementById("sign-now-button");
 signNowButton.addEventListener('click', validateForm);
 
-
-// const closeModal = () => {
-//   let modal = document.getElementById("thanks-modal");
-//   modal.style.display = "none";
-// }
-// // Event listener for the close modal button
-// const closeModalButton = document.getElementById("close-modal");
-// closeModalButton.addEventListener('click', closeModal);
-// document.getElementById('close-modal').addEventListener('click', () => {
-//   document.getElementById('thanks-modal').style.display = 'none';
-// });
 let closeButton = document.getElementById("close-modal");
 if (closeButton) {
   closeButton.addEventListener('click', () => {
