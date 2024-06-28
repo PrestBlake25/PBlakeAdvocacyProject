@@ -1,0 +1,294 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #daebfb;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  /* keeps the modal in one place */
+  z-index: 2;
+  /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+  animation: modalFadeIn 0.5s forwards;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightblue;
+  /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+  /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex;
+  /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  color: darkblue;
+  font-size: 40px;
+}
+
+#about,
+#articles,
+#video,
+#makeimpact {
+  font-family: "Roboto", sans-serif;
+  color: darkred;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  margin: 0px;
+  background-color: #282525;
+  left: 0;
+  /* Set the left position to 0 for full width */
+  right: 0;
+  z-index: 1;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  display: block;
+}
+
+.headings {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin: auto;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+.navbar a:hover {
+ color: black;
+}
+
+a:active {
+  color: orange;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: cyan;
+  font-size: 15px;
+  margin: 5px;
+  /* Add margin around each button */
+}
+
+.infoArts {
+  text-align: left;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  /* Set the left position to 0 for full width */
+  right: 0;
+  /* Set the right position to 0 for full width */
+}
+#close-modal{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#close-modal:hover {
+  background-color: darkred; /* Change background color on hover */
+}
+
+#theme-button {
+  color: blue;
+  border-width: thick;
+  border: solid;
+}
+
+#reduce-motion-button {
+  color: red;
+  border-width: thick;
+  border: solid;
+}
+
+.reduce-motion * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.dark-mode {
+  background-color: darkcyan;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 25%;
+  align-items: center;
+}
+
+#sign-now-button {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sign-now-button:hover {
+  background-color: orange;
+}
+
+.error {
+  border-style: solid;
+  border-color: black;
+  background: darkred;
+  border-width: 2px;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EduImpact</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Images/LetterE.png">
+</head>
+<div class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#video">Videos</a></li>
+    <li><a href="#makeimpact">Make an Impact!</a></li>
+    <li><button id="theme-button">Dark Mode</button></li>
+    <li><button id="reduce-motion-button">Reduce Motion</button></li>
+  </ul>
+</div>
+
+<body>
+  <div id="home">
+    <div class="header-container">
+      <h1 id="title">EduImpact</h1>
+      <h3>Make Learning Great Again!</h3>
+      <div id="home">
+        <div class="revealable">
+          <h2 id="about">About My Topic</h2>
+          <p class="aboutSecton" >Students are disatified with the lack of resources and opportunities for learning. This website is a place
+            where teachers can learn about how to improve their students' education. Pupils can also learn about the
+            benefits of learning in school and how to make a difference in their school's education. Parents need to
+            priortize their children's education so they can get the best learning resources to offer. As the world
+            keeps evolving, there are more branching ways to develop an education through different technologies. The
+            COVID-19 pandemic brought students to learn through online communication and completing assignments from the
+            comfort of your own home. However, the current system of education is not the best for pupils, resulting in
+            higher chances of cheating and lack of motivation. </p>
+        </div>
+        <section class="revealable">
+          <div class="container">
+            <figure style="display: inline-block;">
+              <img src=Images/DisappointedTeacher.jpg alt="picture of books" height="200" width="300" />
+              <figcaption>Student getting scolded by a teacher</figcaption>
+            </figure>
+            <figure style="display: inline-block;">
+              <img src=Images/ChildNeedsHelp.jpg alt="A student wanting help" height="200" width="300" />
+              <figcaption>Student is tired of school</figcaption>
+            </figure>
+          </div>
+        </section>
+        <div class="revealable">
+          <h2 id="articles">Articles</h2>
+          <p>Here are some articles that can help you learn more about how to improve your students' education:</p>
+          <ul class="infoArts">
+            <li><a
+                href="https://www.nytimes.com/2019/12/19/learning/what-students-are-saying-about-how-to-improve-american-education.html">
+                What Students Are Saying About How to Improve American Education</a> </li>
+            <p>This article speaks about what students are saying about how to improve their education. It also provides
+              the 3
+              most common prompts given by scholars to better teach them</p>
+            </li>
+            <li><a href="https://www.edutopia.org/article/improving-education-student-input/">Want to Improve Education?
+                Ask
+                Students for Input</a> </li>
+            <p> A teacher decides to give his students a project to answer questions related to improving education.
+              These
+              students were in a class that focuses on education. Want to see what they said?</p>
+            <li><a
+                href="https://www.brookings.edu/articles/collaborating-to-transform-and-improve-education-systems-a-playbook-for-family-school-engagement/">Collaborating
+                To Transform And Improve Education Systems:
+                A playbook for family-school engagement</a></li>
+            <p> Ever since the COVID-19 pandemic, schools have switched to online learning. This article talks about how
+              to make
+              this new type of education engaging and effective. </p>
+          </ul>
+        </div>
+        <div>
+          <section class="revealable">
+            <h2 id="video">Videos</h2>
+            <section class="videos">
+              <figure>
+                <iframe src="https://www.youtube.com/embed/CI8o6D55jHA?si=8SPT-2TwohTwLDlt"></iframe>
+                <figcaption> This video includes reasons why the current education system is inadequate and how it can
+                  be
+                  improved</figcaption>
+              </figure>
+              <figure>
+                <iframe src="https://www.youtube-nocookie.com/embed/7sqeoYOQ4qg?si=Quh4_lj6Iwo-A8YI"></iframe>
+                <figcaption> a Ted Talk informing the audience of the aftermath of a broken education system in India
+                  and the ideas from various educators on
+                  how to "fix" it</figcaption>
+              </figure>
+
+            </section>
+        </div>
+        </section>
+        <div>
+          <div class="petition revealable" id="petition">
+            <h2 id="makeimpact">Let's Improve Education! 🎒</h2>
+
+            <div class="petition-container">
+              <div class="aboutTopic">
+                <!-- info goes here -->
+                <p>Visualize of the different problems of the current education system. Think of possible ways where we
+                  can improve our current way of schooling, so students of the next generation don't have to go through
+                  the same problems we're going through today. Future generations are going to experience our style of
+                  learning, so as students, educators, and former students, we have an obligation to play a part in the
+                  future of education. One voice is nothing, but a million is more than enough
+                  to make a difference. </p>
+              </div>
+
+              <div class="signatures">
+                <p>🖊️ Marcus from Brooklyn supports this.</p>
+                <p>🖊️ Diana from Queens supports this.</p>
+                <p>🖊️ Laura from Harlem supports this </p>
+              </div>
+              <p id="counter">"🖊️ 3 people have signed this petition and support this cause."</p>
+            </div>
+            <!--- Sign Petition Form --->
+            <form id="sign-petition" title="sign-petition">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" placeholder="First Name" required>
+
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" placeholder="Last Name">
+
+              <label for="email">Email:</label>
+              <input type="text" id="email" placeholder="Email">
+
+              <label for="homeTown">Hometown:</label>
+              <input type="text" id="homeTown" placeholder="Hometown" required>
+            </form>
+
+            <!--- Sign Now Button --->
+            <button id="sign-now-button">Sign Now</button>
+
+
+          </div>
+          <!-- Form for users to full out-->
+
+
+
+          <!-- The script tag connects to the JavaScript file -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>&copy; 2024 EduImpact. All Rights Reserved
+    </p>
+  </footer>
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <!-- text here -->
+        <p id="thanks-modal-content"></p>
+        <!-- button here (stretch feature) -->
+        <button id="close-modal"> Close </button>
+      </div>
+      <!-- image here-->
+      <img src="Images/SpongeBobYippee.jpg" height="300" width="300" id="modal-image">
+    </div>
+
+  </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
