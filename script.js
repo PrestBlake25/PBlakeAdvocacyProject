@@ -103,7 +103,7 @@ const toggleModal = (person) => {
 
   setTimeout(() => {
     modal.style.display = "none";
-    clearInterval(intervalId); // Clear the interval when the modal closes
+    clearInterval(intervalId);
   }, 4000);
 
 }
